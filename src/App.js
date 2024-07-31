@@ -1,10 +1,10 @@
 import React from "react";
-import Movie from "./Movie";
+import Users from "./server/createuser.component";
 
 function App() {
   return (
     <div className="container">
-      <Movie />
+      <Users />
     </div>
   );
 }

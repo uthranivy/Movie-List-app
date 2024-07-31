@@ -1,16 +1,23 @@
+// Run json after start npm
+
 import React, { Component } from "react";
 import Table from "./Table";
-// import { getMovies } from "./services/fakeMovieServices";
+import axios from "axios";
 
-class Movie extends Component {
+class Movie1 extends Component {
   state = {
     movies: [],
   };
-
+  // Using Axios library
   componentDidMount() {
-    fetch("http://localhost:3004/movies")
-      .then((res) => res.json())
-      .then((data) => this.setState({ movies: data }));
+    // fetch("http://localhost:3004/movies")
+    //   .then((res) => res.json())
+    //   .then((data) => this.setState({ movies: data }));
+    axios.get("http://localhost:3004/movies").then((res) => {
+      const movies = res.data;
+      console.log(movies);
+      this.setState({ movies });
+    });
   }
 
   handleDelete = (movie) => {
@@ -63,24 +70,4 @@ class Movie extends Component {
   }
 }
 
-export default Movie;
-
-// Without Serverside Code
-
-// state = {
-//   movies: getMovies(),
-// };
-
-// handleDelete = (movie) => {
-//   const moviesDelete = this.state.movies.filter((m) => m._id !== movie._id);
-
-//   this.setState({
-//     movies: moviesDelete,
-//   });
-// };
-
-// const { length: count } = this.state.movies;
-
-//     if (count === 0) {
-//     }
-//     return <p>There is no movies in the database</p>;
+export default Movie1;

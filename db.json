@@ -9,7 +9,7 @@
   ],
   "movies": [
     {
-      "id": "Sb21ca3eeb7f6fbccd471815",
+      "_id": "Sb21ca3eeb7f6fbccd471815",
       "title": "Terminator",
       "genre": { "id": "5b21ca3eeb7f6fbccd471820", "name": "Action" },
       "numberInStock": 6,
