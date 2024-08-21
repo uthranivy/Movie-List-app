@@ -34,7 +34,7 @@ const movies = [
   {
     _id: "Sb21ca3eeb7f6fbcc6471819",
     title: "Forrest Gump",
-    genre: { id: "5b21ca3eeb7f6fbccd471824", name: "Romance" },
+    genre: { id: "5b21ca3eeb7f6fbccd471822", name: "Crime" },
     numberInStock: 8,
     dailyRentalRate: 4.5,
     publishDate: "2018-03-21T19:21:28.8092",

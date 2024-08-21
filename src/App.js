@@ -1,5 +1,5 @@
 import React from "react";
-import Users from "./server/createuser.component";
+import Users from "./PaginationMovie";
 
 function App() {
   return (

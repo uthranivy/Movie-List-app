@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Table from "./Table";
+// import Table from "./Table";
 // import { getMovies } from "./services/fakeMovieServices";
 
 class Movie extends Component {
@@ -26,7 +26,7 @@ class Movie extends Component {
       <p>There is no movies in the database</p>
     ) : (
       <div>
-        <Table clickME={this.handleDelete} movies={this.state.movies} />
+        {/* <Table clickME={this.handleDelete} movies={this.state.movies} /> */}
         <p> Showing {this.state.movies.length} movies in the database</p>
         <table className="table table-bordered border-primary">
           <thead>
